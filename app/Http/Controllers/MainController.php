@@ -35,4 +35,8 @@ class MainController extends Controller
       return redirect('/');
     }
   }
+
+  public function store(request $request) {
+    
+  }
 }

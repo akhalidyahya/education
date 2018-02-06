@@ -28,7 +28,7 @@
 							<h1>Please fill this Form</h1>
 						</div>
             <div class="card-content">
-              <form>
+              <form method="post">
                 <ul data-method="GET" class="stepper horizontal" style="min-height:1084px">
 
                   <li class="step active">
