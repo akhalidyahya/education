@@ -16,6 +16,7 @@
 	<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
   <script src="{{ asset('assets/materialize/js/materialize.js') }}"></script>
   <script src="{{ asset('assets/js/materialize-stepper.js') }}"></script>
+	<script src="{{ asset('assets/js/SmoothScroll.min.js') }}"></script>
 </head>
 <body>
   <div class="section grey lighten-5 edu-bg">
@@ -40,8 +41,8 @@
                          <label for="first_name">Nama Lengkap</label>
                        </div> <!--/input field-->
                        <div class="input-field col s12">
-                         <i class="material-icons prefix">mood</i>
-                         <select name="jurusan" required>
+                         <i class="material-icons prefix">account_balance</i>
+                         <select name="jurusan" required="true">
                            <option value="" disabled="" selected=""> ---- </option>
                            <option value="teknik sipil">Teknik Sipil</option>
                            <option value="teknik elektro">Teknik Elektro</option>
@@ -53,17 +54,17 @@
                          <label>Jurusan</label>
                        </div> <!--/input field-->
                        <div class="input-field col s12">
-                         <i class="material-icons prefix">mood</i>
+                         <i class="material-icons prefix">account_balance</i>
                          <input name="prodi" id="prodi" type="text" required="">
                          <label>Prodi</label>
                        </div> <!--/input field-->
                        <div class="input-field col s12">
-                         <i class="material-icons prefix">mood</i>
+                         <i class="material-icons prefix">filter_4</i>
                          <input name="ipk" id="ipk" type="text" required="">
                          <label>IPK</label>
                        </div> <!--/input field-->
                        <div class="input-field col s12">
-                         <i class="material-icons prefix">mood</i>
+                         <i class="material-icons prefix">book</i>
                          <input name="skripsi" id="skripsi" type="text" required="">
                          <label>Judul Skripsi</label>
                        </div> <!--/input field-->
@@ -79,7 +80,7 @@
                    <div class="step-content">
                     <div class="row">
                       <div class="input-field col s12">
-                         <i class="material-icons prefix">mood</i>
+                         <i class="material-icons prefix">phone</i>
                          <input name="telp" id="telp" type="text" required="">
                          <label>No. Telpon / WA</label>
                       </div> <!--/input field-->
@@ -89,27 +90,22 @@
                        <label for="email">Email</label>
                       </div> <!--/input field-->
                       <div class="input-field col s12">
-                         <i class="material-icons prefix">mood</i>
+                         <i class="material-icons prefix">phone_android</i>
                          <input name="instagram" id="instagram" type="text" required="">
                          <label>Instagram</label>
                       </div> <!--/input field-->
                       <div class="input-field col s12">
-                         <i class="material-icons prefix">mood</i>
+                         <i class="material-icons prefix">laptop</i>
                          <input name="web" id="web" type="text" required="">
                          <label>Website Pribadi</label>
                       </div> <!--/input field-->
                       <div class="input-field col s12">
-                         <i class="material-icons prefix">mood</i>
+                         <i class="material-icons prefix">share</i>
                          <input name="sosmed" id="sosmed" type="text" required="">
                          <label>Sosmed lainnya</label>
                       </div> <!--/input field-->
                       <div class="input-field col s12">
-                         <i class="material-icons prefix">mood</i>
-                         <input name="telp" id="telp" type="text" required="">
-                         <label>No. Telpon / WA</label>
-                      </div> <!--/input field-->
-                      <div class="input-field col s12">
-                        <i class="material-icons prefix">mood</i>
+                        <i class="material-icons prefix">home</i>
                         <textarea name="alamat" id="alamat" class="materialize-textarea" data-length="120" required></textarea>
                         <label>Alamat</label>
                       </div>
@@ -126,7 +122,7 @@
                    <div class="step-content">
                     <div class="row">
                         <div class="input-field col s12">
-                           <i class="material-icons prefix">mood</i>
+                           <i class="material-icons prefix">folder</i>
                            <select name="kegiatan" required id="kegiatan">
                              <option value="" disabled="" selected=""> ---- </option>
                              <option value="bekerja">Bekerja</option>
@@ -139,42 +135,43 @@
                            </select>
                            <label>Kegiatan Saat Ini</label>
                           <div class="input-field col s12">
+														<i class="material-icons prefix"></i>
                            <input type="text" name="lainnya">
                            <label>Lainnya</label>
                           </div>
                         </div> <!--/input field-->
                         <div class="input-field col s12">
-                          <i class="material-icons prefix">mood</i>
+                          <i class="material-icons prefix">location_on</i>
                           <input name="tempat_kerja" id="tempat" type="text">
                           <label>tempat kerja/freelance/part-time/ekstensi</label>
                         </div>
                         <div class="input-field col s12">
-                          <i class="material-icons prefix">mood</i>
+                          <i class="material-icons prefix">person_outline</i>
                           <input name="posisi" id="posisi" type="text">
                           <label>Posisi Kerja</label>
                         </div>
                         <div class="input-field col s12">
-                          <i class="material-icons prefix">mood</i>
+                          <i class="material-icons prefix">person_pin</i>
                           <input name="jabatan" id="jabatan" type="text">
                           <label>Jabatan Kerja</label>
                         </div>
                         <div class="input-field col s12">
-                          <i class="material-icons prefix">mood</i>
+                          <i class="material-icons prefix">import_contacts</i>
                           <textarea name="sertifikat" id="sertifikat" class="materialize-textarea" data-length="120"></textarea>
                           <label>Sertifikat yang pernah diraih</label>
                         </div>
                         <div class="input-field col s12">
-                          <i class="material-icons prefix">mood</i>
+                          <i class="material-icons prefix">airplay</i>
                           <textarea name="lomba" id="lomba" class="materialize-textarea" data-length="120"></textarea>
                           <label>Lomba yang pernah diikuti</label>
                         </div>
                         <div class="input-field col s12">
-                          <i class="material-icons prefix">mood</i>
+                          <i class="material-icons prefix">grade</i>
                           <textarea name="prestasi" id="prestasi" class="materialize-textarea" data-length="120"></textarea>
                           <label>Prestasi yang pernah diraih</label>
                         </div>
                         <div class="input-field col s12">
-                           <i class="material-icons prefix">mood</i>
+                           <i class="material-icons prefix">check</i>
                            <select name="dosen" required id="dosen">
                             <option value="">---</option>
                             <option value="ya">Ya</option>
