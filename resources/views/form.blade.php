@@ -18,14 +18,14 @@
   <script src="{{ asset('assets/js/materialize-stepper.js') }}"></script>
 </head>
 <body>
-  <div class="section grey lighten-5">
+  <div class="section grey lighten-5 edu-bg">
     <div class="container">
       <div class="row">
         <div class="col l12">
-					<div class="heading">
-						<h1>Please fill this Form</h1>
-					</div>
           <div class="card">
+						<div class="heading">
+							<h1>Please fill this Form</h1>
+						</div>
             <div class="card-content">
               <form>
                 <ul data-method="GET" class="stepper horizontal" style="min-height:1084px">

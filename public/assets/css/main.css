@@ -149,6 +149,16 @@ body {
 	font-family: "montserrat reguler";
 }
 
+.edu-bg {
+	background-image: url('../img/edu-bg.png');
+	background-repeat: repeat;
+}
+
+.edu-bg .heading {
+	color: #333;
+	padding-top: 30px;
+}
+
 @media screen and (min-width: 768px) {
 	.img-1 {
 		display: block;
