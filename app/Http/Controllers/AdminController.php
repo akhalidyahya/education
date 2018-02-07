@@ -17,7 +17,8 @@ class AdminController extends Controller
     public function index(request $request)
     {
       if($request->session()->has('login_status')){
-        return view('admin_pages/dashboard');
+        $data['data_info'] = DB::table('datas');
+        return view('admin_pages/dashboard',$data);
       } else {
         return redirect('login');
       }

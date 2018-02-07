@@ -149,10 +149,11 @@
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-4">
                         <div class="card">
                             <div class="card-block">
-
+                              <h3>Data submitted</h3>
+                              <h1>{{$data_info->count()}}</h1>
                             </div>
                         </div>
                     </div>
