@@ -41,4 +41,11 @@ class AdminController extends Controller
         return redirect('login');
       }
     }
+
+    public function destroy(Request $request, $id)
+    {
+        $request->session()->flash('status', 'Task was successful!');
+        DB::table('datas')->where('id', $id)->delete();
+        return redirect('data');
+    }
 }

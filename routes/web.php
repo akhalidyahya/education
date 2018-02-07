@@ -25,6 +25,8 @@ Route::get('data','AdminController@data');
 
 Route::get('detail/{id}','AdminController@detail');
 
+Route::get('delete/{id}','AdminController@destroy');
+
 Route::get('login','LoginController@index');
 
 Route::post('validate','LoginController@login');

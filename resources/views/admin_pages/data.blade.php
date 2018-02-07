@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/apple.png') }}">
-    <title>Material Pro Admin Template - The Most Complete & Trusted Bootstrap 4 Admin Template</title>
+    <title>Data</title>
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('admin/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom CSS -->
@@ -150,6 +150,13 @@
                 <!-- ============================================================== -->
                 <div class="row">
                     <div class="col-12">
+                      @if(Session::has('status'))
+                      <div class="card">
+                        <div class="card-block" style="background-color: #61d293; color:white;">
+                          {{ Session::get('status') }}
+                        </div>
+                      </div>
+                      @endif
                         <div class="card">
                             <div class="card-block">
                                 <div class="table-responsive">
@@ -179,7 +186,7 @@
                                                         </button>
                                                     </a>
 
-                                                    <a href="" data-toggle="tooltip" title="Delete">
+                                                    <a href="{{ url('delete/'.$data->id.'') }}" data-toggle="tooltip" title="Delete">
                                                         <button onclick="return confirm('Delete this data?');" class="btn btn-danger">
                                                             <i class="mdi mdi-close"></i>
                                                         </button>
