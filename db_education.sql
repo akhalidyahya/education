@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 07, 2018 at 09:03 PM
+-- Generation Time: Feb 07, 2018 at 10:16 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -76,6 +76,14 @@ CREATE TABLE `datas` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `datas`
+--
+
+INSERT INTO `datas` (`id`, `nama`, `angkatan`, `jurusan`, `prodi`, `ipk`, `skripsi`, `no_telp`, `email`, `instagram`, `web`, `sosmed`, `alamat`, `kegiatan`, `lainnya`, `tempat_kerja`, `posisi`, `jabatan`, `sertifikat`, `lomba`, `prestasi`, `minat_dosen`, `created_at`, `updated_at`) VALUES
+(4, 'John Doe', '2017', 'teknik informatika dan komputer', 'TI', 3.75, 'Implementasi algoritma mesin pencari', '080000000000', 'admin@admin.com', '@admin', 'admin.com', 'twitter: @admin', 'jl. Kenanga V no. 30', 'bekerja', NULL, 'PT Bijaksana', 'Programmer', 'Staff', NULL, 'Web design', NULL, 'ya', '2018-02-07 13:08:06', '2018-02-07 13:08:06'),
+(5, 'a', '2016', 'a', 'a', 1, 'a', 'aa', 'a', 'a', NULL, NULL, 'a', 'a', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'a', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -178,7 +186,7 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `datas`
 --
 ALTER TABLE `datas`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `migrations`
