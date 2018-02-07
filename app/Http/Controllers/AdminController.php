@@ -45,18 +45,25 @@ class AdminController extends Controller
 
     public function destroy(Request $request, $id)
     {
+      if($request->session()->has('login_status')){
         DB::table('datas')->where('id', $id)->delete();
         $request->session()->flash('status', 'Task was successful!');
         return redirect('data');
+      } else {
+        return redirect('login');
+      }
     }
 
     public function search(Request $request) {
-      $string = $request->search;
-      $data['data_info'] = DB::table('datas')
-                              ->where('nama','like',$string.'%')
-                              ->orwhere('nama','like','%'.$string)
-                              ->orwhere('nama','like','%'.$string.'%')
-                              ->paginate(10);
-      return view('admin_pages/data',$data);
+      if($request->session()->has('login_status')){
+        $string_nama = $request->search;
+        $data['data_info'] = DB::table('datas')
+                                ->where('nama','like','%'.$string_nama.'%')
+                                ->paginate(10);
+        return view('admin_pages/data',$data);
+      } else {
+        return redirect('login');
+      }
+
     }
 }
