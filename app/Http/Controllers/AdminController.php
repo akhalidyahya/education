@@ -26,7 +26,7 @@ class AdminController extends Controller
     public function data(request $request)
     {
       if($request->session()->has('login_status')){
-        $data['data_info'] = DB::table('datas')->get();
+        $data['data_info'] = DB::table('datas')->paginate(10);
         return view('admin_pages/data',$data);
       } else {
         return redirect('login');

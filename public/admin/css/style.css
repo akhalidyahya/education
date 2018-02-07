@@ -654,6 +654,8 @@ Pagination
 
 .pagination > li > a,
 .pagination > li > span {
+  padding:10px;
+  border:1px solid #cecece;
   color: #263238; }
 
 .pagination > li > a:hover,

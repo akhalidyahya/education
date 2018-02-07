@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/apple.png') }}">
     <title>Data List</title>
     <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="{{ asset('admin/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="{{ asset('admin/css/style.css') }}" rel="stylesheet">
@@ -196,6 +197,7 @@
                                             @endforeach
                                         </tbody>
                                     </table>
+                                    {{ $data_info->links() }}
                                 </div>
                             </div>
                         </div>

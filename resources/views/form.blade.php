@@ -66,7 +66,7 @@
                        </div> <!--/input field-->
                        <div class="input-field col s12">
                          <i class="material-icons prefix">filter_4</i>
-                         <input name="ipk" id="ipk" type="text" required="">
+                         <input name="ipk" id="ipk" type="text" required="" placeholder="tanda koma memakai titik">
                          <label>IPK</label>
                        </div> <!--/input field-->
                        <div class="input-field col s12">
