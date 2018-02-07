@@ -25,10 +25,11 @@
         <div class="col l12">
           <div class="card">
 						<div class="heading">
-							<h1>Please fill this Form</h1>
+							<h1>{{ $title }}</h1>
 						</div>
             <div class="card-content">
-              <form method="post">
+              <form method="post" action="{{ url('send') }}">
+								{{ csrf_field() }}
                 <ul data-method="GET" class="stepper horizontal" style="min-height:1084px">
 
                   <li class="step active">
@@ -40,6 +41,11 @@
                          <input name="nama" id="name" type="text" required="">
                          <label for="first_name">Nama Lengkap</label>
                        </div> <!--/input field-->
+											 <div class="input-field col s12">
+												<i class="material-icons prefix">date_range</i>
+												<input name="angkatan" id="angkatan" type="text" required="">
+												<label for="first_name">Angkatan</label>
+											</div> <!--/input field-->
                        <div class="input-field col s12">
                          <i class="material-icons prefix">account_balance</i>
                          <select name="jurusan" required="true">

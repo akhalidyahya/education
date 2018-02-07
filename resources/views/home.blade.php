@@ -20,6 +20,10 @@
 			<div class="error">
 				{{ Session::get('status') }}
 			</div>
+			@elseif(Session::has('success'))
+			<div class="success">
+				{{ Session::get('success') }}
+			</div>
 			@else
 			<form role="form" action="{{ url('validation') }}" method="post">
 				{{ csrf_field() }}
