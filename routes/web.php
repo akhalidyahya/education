@@ -23,6 +23,8 @@ Route::get('dashboard','AdminController@index');
 
 Route::get('data','AdminController@data');
 
+Route::post('search','AdminController@search');
+
 Route::get('detail/{id}','AdminController@detail');
 
 Route::get('delete/{id}','AdminController@destroy');

@@ -161,127 +161,127 @@
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Nama</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->nama}}" disabled name="nama" type="text" class="form-control">
+                            <input value="{{$detail[0]->nama}}"   name="nama" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Angkatan</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->angkatan}}" disabled name="angkatan" type="text" class="form-control">
+                            <input value="{{$detail[0]->angkatan}}"   name="angkatan" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Jurusan</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->jurusan}}" disabled name="jurusan" type="text" class="form-control">
+                            <input value="{{$detail[0]->jurusan}}"   name="jurusan" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Prodi</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->prodi}}" disabled name="prodi" type="text" class="form-control">
+                            <input value="{{$detail[0]->prodi}}"   name="prodi" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">IPK</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->ipk}}" disabled name="ipk" type="text" class="form-control">
+                            <input value="{{$detail[0]->ipk}}"   name="ipk" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Judul Skripsi</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->skripsi}}" disabled name="skripsi" type="text" class="form-control">
+                            <input value="{{$detail[0]->skripsi}}"   name="skripsi" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Nomor Telp/WA</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->no_telp}}" disabled name="telp" type="text" class="form-control">
+                            <input value="{{$detail[0]->no_telp}}"   name="telp" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Email</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->email}}" disabled name="email" type="text" class="form-control">
+                            <input value="{{$detail[0]->email}}"   name="email" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Instagram</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->instagram}}" disabled name="instagram" type="text" class="form-control">
+                            <input value="{{$detail[0]->instagram}}"   name="instagram" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Sosmed Lainnya</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->sosmed}}" disabled name="sosmed" type="text" class="form-control">
+                            <input value="{{$detail[0]->sosmed}}"   name="sosmed" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Alamat</label>
                           <div class="col-sm-10">
-                            <textarea disabled name="alamat" class="form-control">{{$detail[0]->alamat}}</textarea>
+                            <textarea   name="alamat" class="form-control">{{$detail[0]->alamat}}</textarea>
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Kegiatan saat ini</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->kegiatan}}" disabled name="kegiatan" type="text" class="form-control">
+                            <input value="{{$detail[0]->kegiatan}}"   name="kegiatan" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Kegiatan Lainnya</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->lainnya}}" disabled name="lainnya" type="text" class="form-control">
+                            <input value="{{$detail[0]->lainnya}}"   name="lainnya" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">tempat kerja/freelance/part-time/ekstensi</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->tempat_kerja}}" disabled name="tempat_kerja" type="text" class="form-control">
+                            <input value="{{$detail[0]->tempat_kerja}}"   name="tempat_kerja" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Posisi Kerja</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->posisi}}" disabled name="posisi" type="text" class="form-control">
+                            <input value="{{$detail[0]->posisi}}"   name="posisi" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Jabatan Kerja</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->jabatan}}" disabled name="jabatan" type="text" class="form-control">
+                            <input value="{{$detail[0]->jabatan}}"   name="jabatan" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Sertifikat yang pernah didapat</label>
                           <div class="col-sm-10">
-                            <textarea disabled name="sertifikat" class="form-control">{{$detail[0]->sertifikat}}</textarea>
+                            <textarea   name="sertifikat" class="form-control">{{$detail[0]->sertifikat}}</textarea>
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Lomba yang pernah diikuti</label>
                           <div class="col-sm-10">
-                            <textarea disabled name="lomba" class="form-control">{{$detail[0]->lomba}}</textarea>
+                            <textarea   name="lomba" class="form-control">{{$detail[0]->lomba}}</textarea>
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Prestasi yang pernah diraih</label>
                           <div class="col-sm-10">
-                            <textarea disabled name="prestasi" class="form-control">{{$detail[0]->prestasi}}</textarea>
+                            <textarea   name="prestasi" class="form-control">{{$detail[0]->prestasi}}</textarea>
                           </div>
                         </div> <!-- /form group -->
                         <div class="form-group row">
                           <label class="col-sm-2 control-label">Berminat jadi dosen PNJ?</label>
                           <div class="col-sm-10">
-                            <input value="{{$detail[0]->minat_dosen}}" disabled name="dosen" type="text" class="form-control">
+                            <input value="{{$detail[0]->minat_dosen}}"   name="dosen" type="text" class="form-control">
                           </div>
                         </div> <!-- /form group -->
 
-                        <div class="text-center">
-                          <button type="submit" name="button" class="btn btn-primary" disabled>Submit</button>
-                        </div>
+                        <!-- <div class="text-center">
+                          <button type="submit" name="button" class="btn btn-primary"  >Submit</button>
+                        </div> -->
 
                       </form>
                     </div>

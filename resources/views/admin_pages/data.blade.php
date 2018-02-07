@@ -161,6 +161,13 @@
                         <div class="card">
                             <div class="card-block">
                                 <div class="table-responsive">
+                                  <form class="" action="{{url('search')}}" method="post">
+                                    {{ csrf_field() }}
+                                    <input type="text" name="search" value="">
+                                    <button type="submit" class="btn btn-primary">
+                                      <i class="mdi mdi-account-search"></i>
+                                    </button>
+                                  </form>
                                     <table class="table">
                                         <thead>
                                             <tr>
@@ -173,6 +180,20 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                          <!-- <tr>
+                                            <td>#</td>
+                                            <td><input type="text" name="s_nama"> </td>
+                                            <td><input type="text" name="s_nama"></td>
+                                            <td><input type="text" name="s_nama"></td>
+                                            <td><input type="text" name="s_nama"></td>
+                                            <td>
+                                              <a href="{{ url('search') }}" data-toggle="tooltip" title="Search">
+                                                  <button class="btn btn-primary">
+                                                      <i class="mdi mdi-account-search"></i>
+                                                  </button>
+                                              </a>
+                                            </td>
+                                          </tr> -->
                                           @foreach($data_info as $data)
                                             <tr>
                                                 <td>#</td>
