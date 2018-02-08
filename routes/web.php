@@ -23,7 +23,7 @@ Route::get('dashboard','AdminController@index');
 
 Route::get('data','AdminController@data');
 
-Route::post('search','AdminController@search');
+Route::post('data/search','AdminController@search');
 
 Route::get('detail/{id}','AdminController@detail');
 
@@ -34,3 +34,5 @@ Route::get('login','LoginController@index');
 Route::post('validate','LoginController@login');
 
 Route::get('logout','LoginController@logout');
+
+Route::get('data/download','AdminController@download');

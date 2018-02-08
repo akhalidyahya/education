@@ -52,7 +52,7 @@
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
 
                             <!-- Light Logo icon -->
-                            <img src="admin/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                            <img src="{{asset('admin/images/logo-light-icon.png')}}" alt="homepage" class="light-logo" />
                         </b>
                         <!--End Logo icon -->
                         <span style="color: white"><strong>ADMIN PAGE</strong></span>
@@ -83,7 +83,7 @@
                         <!-- Profile -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="admin/images/users/1.jpg" alt="user" class="profile-pic m-r-10" />{{ Session::get('nama') }}</a>
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{url('admin/images/users/1.jpg')}}" alt="user" class="profile-pic m-r-10" />{{ Session::get('nama') }}</a>
                         </li>
                     </ul>
                 </div>
@@ -160,7 +160,11 @@
                       @endif
                         <div class="card">
                             <div class="card-block">
-                                <div class="table-responsive">
+                              <div class="row">
+                                <div class="col-sm-4">
+                                  <h3>List Data Submission</h3>
+                                </div>
+                                <!-- <div class="col-sm-4">
                                   <form class="" action="{{url('search')}}" method="post">
                                     {{ csrf_field() }}
                                     <input type="text" name="search" value="">
@@ -168,6 +172,13 @@
                                       <i class="mdi mdi-account-search"></i>
                                     </button>
                                   </form>
+                                </div> -->
+                                <div class="col-sm-8 text-right">
+                                  <a href="{{url('data/download')}}"><button class="btn btn-success" type="button" name="button">Download</button> </a>
+
+                                </div>
+                              </div>
+                                <div class="table-responsive">
                                     <table class="table">
                                         <thead>
                                             <tr>
@@ -180,20 +191,26 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                          <!-- <tr>
-                                            <td>#</td>
+                                          <tr>
+                                            <td></td>
+                                            <form action="{{ url('data/search') }}" method="post">
+                                              {{ csrf_field() }}
                                             <td><input type="text" name="s_nama"> </td>
-                                            <td><input type="text" name="s_nama"></td>
-                                            <td><input type="text" name="s_nama"></td>
-                                            <td><input type="text" name="s_nama"></td>
+                                            <td><input type="text" name="s_angkatan"></td>
+                                            <td><input type="text" name="s_jurusan"></td>
+                                            <td><input type="text" name="s_prodi"></td>
                                             <td>
-                                              <a href="{{ url('search') }}" data-toggle="tooltip" title="Search">
-                                                  <button class="btn btn-primary">
-                                                      <i class="mdi mdi-account-search"></i>
+                                                <button type="submit" class="btn btn-primary" data-toggle="tooltip" title="Search">
+                                                    <i class="mdi mdi-account-search"></i>
+                                                </button>
+                                                <a href="{{url('data')}}">
+                                                  <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Refresh">
+                                                      <i class="mdi mdi-reload"></i>
                                                   </button>
-                                              </a>
+                                                </a>
                                             </td>
-                                          </tr> -->
+                                            </form>
+                                          </tr>
                                           @foreach($data_info as $data)
                                             <tr>
                                                 <td>#</td>

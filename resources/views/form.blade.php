@@ -56,6 +56,7 @@
                            <option value="teknik informatika dan komputer">Teknik Informatika dan Komputer</option>
                            <option value="akuntansi">Akuntansi</option>
                            <option value="administrasi niaga">Administrasi Niaga</option>
+													 <option value="administrasi niaga">Cevest</option>
                          </select>
                          <label>Jurusan</label>
                        </div> <!--/input field-->
